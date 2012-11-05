@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  list-style: none;
+}
+a,
+a:hover,
+a:active,
+a:disabled {
+  display: inline-block;
+}
+body {
+  color: #333333;
+  background-color: white;
+}
+.light {
+  color: #969696;
+}
+.lighter {
+  color: #aaaaaa;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+  color: #555555;
+  text-decoration: none;
+}
+a img,
+a:hover img,
+a:active img,
+a:visited img {
+  border: none;
+}
+em {
+  color: #969696;
+  font-style: normal;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ffffff;
+}
+hr.with-margins {
+  margin: 6em 0;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body,
+input,
+button,
+select,
+option,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+body {
+  font-size: 100%;
+}
+input,
+button,
+select,
+option,
+textarea {
+  font-size: 100%;
+}
+h1 {
+  font-size: 2.6em;
+  margin: 0.5em 0;
+}
+h2 {
+  font-size: 1.6em;
+  font-weight: normal;
+  margin: 0.25em 0;
+}
+h3 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+p {
+  line-height: 1.75em;
+}
+ul li {
+  line-height: 1.75em;
+}
+.large {
+  font-size: 1.1em;
+}
+.larger {
+  font-size: 1.2em;
+}
+.small {
+  font-size: 0.9em;
+}
+.smaller {
+  font-size: 0.8em;
+}
+.strong {
+  font-weight: bold;
+}
+blockquote {
+  font-size: 1.2em;
+  margin: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+body {
+  margin: 0;
+}
+span {
+  display: inline-block;
+}
+header {
+  margin: 0;
+  position: relative;
+}
+header nav {
+  float: right;
+  position: relative;
+}
+header nav ul.navigation > li {
+  float: left;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  margin-top: 2.5em;
+  border-right: 1px solid #dddddd;
+}
+header nav ul.navigation > li > a,
+header nav ul.navigation > li > a:active,
+header nav ul.navigation > li > a:hover {
+  font-weight: normal;
+}
+ul.floating li {
+  float: left;
+}
+ul.floating li span {
+  margin-top: 0.8em;
+}
+ul.floating li.separator {
+  margin: 0 1.8em;
+}
+section {
+  padding: 10px 0;
+}
+.separator {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 16px! important;
+}
+div.box {
+  background: gray;
+  height: 250px;
+}
+div.box2 {
+  background: #c0c0c0;
+  height: 125px;
+}
+.highlight {
+  background: white;
+  padding: 1em 1em;
+  border: 1px solid #f2f2f2;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/*
+    3 images => 270px
+    2 images => 430px
+    1 image  => 900px
+*/
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+#page-content img {
+  margin: 20px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+.pattern {
+  width: 100%;
+  height: 6px;
+  background-image: url('/img/wave.png');
+}
+img.logo {
+  height: 100px!important;
+}
+.container-fluid {
+  width: 940px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.row-fluid {
+  *zoom: 1;
+}
+.row-fluid:before,
+.row-fluid:after {
+  display: table;
+  content: "";
+}
+.row-fluid:after {
+  clear: both;
+}
+.row-fluid > [class*="span"] {
+  float: left;
+  margin-left: 2.127659574%;
+}
+.row-fluid > [class*="span"]:first-child {
+  margin-left: 0;
+}
+.row-margin {
+  margin: 2em 0!important;
+}
+.span1 {
+  width: 6.382978723%;
+}
+.span2 {
+  width: 14.89361702%;
+}
+.span3 {
+  width: 23.404255317%;
+}
+.span4 {
+  width: 31.914893614%;
+}
+.span5 {
+  width: 40.425531911%;
+}
+.span6 {
+  width: 48.93617020799999%;
+}
+.span7 {
+  width: 57.446808505%;
+}
+.span8 {
+  width: 65.95744680199999%;
+}
+.span9 {
+  width: 74.468085099%;
+}
+.span10 {
+  width: 82.97872339599999%;
+}
+.span11 {
+  width: 91.489361693%;
+}
+.span12 {
+  width: 99.99999998999999%;
+}
+@media (max-width: 980px) {
+  .container-fluid {
+    width: auto;
+    padding-left: 2.127659574%;
+    padding-right: 2.127659574%;
+  }
+}
+@media (max-width: 767px) {
+  .container-fluid {
+    width: auto;
+    text-align: center;
+  }
+  .row-fluid {
+    width: 100%;
+  }
+  .row {
+    margin-left: 0;
+  }
+  .row > [class*="span"],
+  .row-fluid > [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}

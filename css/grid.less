@@ -1,0 +1,76 @@
+@grid-padding: 2.127659574%;
+@column-width: 6.382978723%;
+@gutter-width: 2.127659574%;
+
+.container-fluid {
+	width: 940px;
+	margin: 0 auto;
+  z-index: 0;
+}
+.row-fluid { .clearfix; }
+
+.row-fluid > [class*="span"] {
+	float: left;
+	margin-left: @gutter-width;
+	// border: 1px solid #FFC300;
+}
+.row-fluid > [class*="span"]:first-child { margin-left: 0; }
+
+.span (@columns) {
+      width: (@column-width*@columns) + (@gutter-width * (@columns - 1));
+}
+
+.row-margin {
+  margin: 2em 0!important;
+}
+
+.span1 {.span(1);}
+.span2 {.span(2);}
+.span3 {.span(3);}
+.span4 {.span(4);}
+.span5 {.span(5);}
+.span6 {.span(6);}
+.span7 {.span(7);}
+.span8 {.span(8);}
+.span9 {.span(9);}
+.span10 {.span(10);}
+.span11 {.span(11);}
+.span12 {.span(12);}
+
+@media (max-width: 980px) {
+	.container-fluid {
+		width: auto;
+		padding-left: @grid-padding;
+		padding-right: @grid-padding;
+	}  
+}
+
+.hide-mobile {}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    width: auto;
+    text-align: center;
+  }
+  // Fluid rows
+  .row-fluid {
+    width: 100%;
+  }
+  // Undo negative margin on rows
+  .row {
+    margin-left: 0;
+  }
+  // Make all columns even
+  .row > [class*="span"],
+  .row-fluid > [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+}

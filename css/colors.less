@@ -1,0 +1,75 @@
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:		        #969696;
+@grayLighter:           #aaa;
+@superLight:            #ddd;
+@white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+@textColor:             @grayDark;
+
+// Links
+// -------------------------
+@linkColor:             #36c;
+@linkColorHover:        darken(@linkColor, 15%);
+
+body {
+	color: @grayDark;
+	background-color: white;
+}
+
+.light {
+	color: @grayLight;
+}
+.lighter {
+	color: @grayLighter;
+}
+
+a, a:hover, a:active, a:visited {
+  color: @gray;
+  text-decoration: none;
+
+// IE fix for borders around image links
+  img {
+    border: none;
+  }
+}
+
+em {
+  .light;
+  font-style: normal;
+}
+
+// Horizontal rules
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid @white;
+}
+
+hr.with-margins {
+  margin: 6em 0;
+}
+
+
+
+
