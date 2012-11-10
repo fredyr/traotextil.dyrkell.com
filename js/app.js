@@ -18,8 +18,18 @@
             this.el = options.el;
             this.model.on('change', this.render, this);
         },
+        strip: function(string) {
+            return string
+                .replace(/&auml;/g, "ä")
+                .replace(/&Auml;/g, "Ä")
+                .replace(/&aring;/g, "å")
+                .replace(/&Aring;/g, "Å")
+                .replace(/&oring;/g, "ö")
+                .replace(/&Oring;/g, "Ö");
+        },
         render: function () {
-            $(this.el).html(markdown.toHTML(this.model.get("markdown")));
+            var md = this.strip(this.model.get("markdown"));
+            $(this.el).html(markdown.toHTML(md));
             return this;
         }
     });
@@ -40,10 +50,10 @@
                 model: start_text
             });
             start_text.fetch({
-                dataType: "text"
-                // beforeSend: function(xhr) {
-                //     xhr.overrideMimeType("text/html; charset=iso-8859-1");
-                // }
+                dataType: "html",
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Accept", "text/html; charset=iso-8859-1");
+                }
             });
 
         }
@@ -55,7 +65,12 @@
             el: "#footer-content",
             model: footer_text
         });
-        footer_text.fetch({dataType: "text"});
+        footer_text.fetch({
+            dataType: "html",
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("Accept", "text/html; charset=iso-8859-1");
+            }
+        });
   
         new Router();
         Backbone.history.start();
